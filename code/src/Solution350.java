@@ -1,8 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,12 +34,7 @@ public class Solution350 extends BaseSolution {
         System.out.print(Arrays.toString(intersect(nums1, nums2)));
     }
 
-    /**
-     * 使用map存出现的次数
-     * @param nums1
-     * @param nums2
-     * @return
-     */
+
     public static int[] intersect(int[] nums1, int[] nums2) {
         return nums1.length < nums2.length ? calculate(nums1, nums2) : calculate(nums2, nums1);
 
